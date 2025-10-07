@@ -3,6 +3,7 @@
 # MySql 이미지를 기반으로 이미지 생성
 FROM mysql:8.0.36
 
+COPY ch8.sql /docker-entrypoint-initdb.d/
 
 ENV LC_ALL=C.UTF-8
 ENV character-set-server utf8
